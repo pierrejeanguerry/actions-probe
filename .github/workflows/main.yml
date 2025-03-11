@@ -1,15 +1,35 @@
-name: format and lint workflow
+name: CI pour Node.js
 on:
   push:
-
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 jobs:
-  format:
+  build:
     runs-on: ubuntulatest
     steps:
-      - name: format
-        run: npm run format
+      - name: Extraire le code du dépôt
+        uses: actions/checkout@v4
+      - name: Confgurer Node.js
+        uses: actions/setupnode@v3
+        with:
+          nodeversion: '22'
+      - name: Installer les dépendances
+        run: npm install
+      - name: Build
+        run: npm run build
   lint:
     runs-on: ubuntulatest
     steps:
-      - name: lint
+      - name: Extraire le code du dépôt
+        uses: actions/checkout@v4
+      - name: Confgurer Node.js
+        uses: actions/setupnode@v3
+        with:
+          nodeversion: '22'
+      - name: Installer les dépendances
+        run: npm install
+      - name: Format files
+        run: npm run format
+      - name: Lint files
         run: npm run lint
