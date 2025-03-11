@@ -8,5 +8,8 @@ jobs:
     steps:
       - name: format
         run: npm run format
+  lint:
+    runs-on: ubuntulatest
+    steps:
       - name: lint
         run: npm run lint
