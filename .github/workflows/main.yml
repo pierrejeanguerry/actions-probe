@@ -6,27 +6,27 @@ on:
     branches: [ main ]
 jobs:
   build:
-    runs-on: ubuntu:latest
+    runs-on: ubuntu-latest
     steps:
       - name: Extraire le code du dépôt
         uses: actions/checkout@v4
-      - name: Confgurer Node.js
-        uses: actions/setupnode@v3
+      - name: Configurer Node.js
+        uses: actions/setup-node@v3
         with:
-          nodeversion: '22'
+          node-version: '22'
       - name: Installer les dépendances
         run: npm install
       - name: Build
         run: npm run build
   lint:
-    runs-on: ubuntu:latest
+    runs-on: ubuntu-latest
     steps:
       - name: Extraire le code du dépôt
         uses: actions/checkout@v4
-      - name: Confgurer Node.js
-        uses: actions/setupnode@v3
+      - name: Configurer Node.js
+        uses: actions/setup-node@v3
         with:
-          nodeversion: '22'
+          node-version: '22'
       - name: Installer les dépendances
         run: npm install
       - name: Format files
