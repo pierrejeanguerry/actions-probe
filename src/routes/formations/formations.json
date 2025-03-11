@@ -1,0 +1,32 @@
+[
+	{
+		"titre": "Bachelor – Concepteur Développeur d'Applications",
+		"sous-titre": "École Hexagone | Depuis 2022",
+		"description": "Formation en développement d'applications, avec un focus sur les compétences en conception et programmation."
+	},
+	{
+		"titre": "Certificats – PSC1 et PSC2",
+		"sous-titre": "Protection Civile | 2019",
+		"description": "Prévention et Secours Civique de niveaux 1 et 2, obtenus à Paris."
+	},
+	{
+		"titre": "Concours d'entrée – École 42",
+		"sous-titre": "École 42 Paris | 2019",
+		"description": "Admission réussie au concours d'entrée de l'École 42. Parcours de formation pendant 1 an."
+	},
+	{
+		"titre": "Licence en Psychologie",
+		"sous-titre": "Université Côte d'Azur (Sophia Antipolis) | 2017 - 2018",
+		"description": "Première année de licence en psychologie."
+	},
+	{
+		"titre": "DUT Informatique",
+		"sous-titre": "Université Clermont Auvergne (UCA) | 2013 - 2014",
+		"description": "Première année de DUT Informatique à l'IUT de Clermont-Ferrand."
+	},
+	{
+		"titre": "Baccalauréat Scientifique – Option Informatique et Sciences du Numérique",
+		"sous-titre": "Lycée Jeanne d'Arc | 2012 - 2013",
+		"description": "Diplôme obtenu avec spécialisation en informatique."
+	}
+]

@@ -1,0 +1,61 @@
+[
+	{
+		"titre": "Clean Code",
+		"sous-titre": "A Handbook of Agile Software Craftsmanship",
+		"auteur": "Robert C. Martin",
+		"editeur": "Prentice Hall",
+		"path": "./books/clean-code.jpg",
+		"date": "2008",
+		"description": "",
+		"status": "pending"
+	},
+	{
+		"titre": "Utopie du logiciel libre",
+		"sous-titre": "Du bricolage informatique à la réinvention sociale",
+		"auteur": "Sébastien BROCA",
+		"editeur": "le passager clandestin",
+		"path": "./books/utopie-du-logiciel-libre.jpg",
+		"description": "2018",
+		"status": "pending"
+	},
+	{
+		"titre": "Cyberattaque",
+		"sous-titre": "PLONGEZ AU COEUR DU BLACKOUT !",
+		"auteur": "Angéline Vagabulle",
+		"editeur": "Thalia NeoMedia Editions",
+		"path": "./books/cyberattaque.jpg",
+		"date": "2017",
+		"description": "",
+		"status": "finished"
+	},
+	{
+		"titre": "Le choc des souverainetés",
+		"sous-titre": "",
+		"auteur": "Pascal Lorot",
+		"editeur": "Débats publics",
+		"path": "./books/le-choc-des-souverainetés.jpg",
+		"date": "2023",
+		"description": "",
+		"status": "finished"
+	},
+	{
+		"titre": "La gouvernance par les nombres",
+		"sous-titre": "",
+		"auteur": "Alain SUPIOT",
+		"editeur": "Pluiriel",
+		"path": "./books/la-gouvernance-par-les-nombres.jpg",
+		"date": "2015",
+		"description": "",
+		"status": "reading"
+	},
+	{
+		"titre": "Steve Jobs",
+		"sous-titre": "",
+		"auteur": "Isaacson Walter",
+		"editeur": "Simon & Schuster",
+		"path": "./books/steve-jobs.jpg",
+		"date": "2011",
+		"description": "",
+		"status": "planned"
+	}
+]

@@ -1,0 +1,55 @@
+image: docker:latest
+
+services:
+  - docker:dind
+
+variables:
+  DOCKER_HOST: tcp://docker:2375/
+  DOCKER_DRIVER: overlay2
+  DOCKER_TLS_CERTDIR: ''
+
+stages:
+  - build
+  - deploy
+
+before_script:
+  - mkdir -p $HOME/.docker
+  - echo $DOCKER_AUTH_CONFIG > $HOME/.docker/config.json
+
+build_image:
+  stage: build
+  script:
+    - echo "username = $DOCKER_HUB_USERNAME"
+    - docker build -t $DOCKER_HUB_USERNAME/$DOCKER_HUB_REPO:$CI_COMMIT_REF_NAME . --push
+    # - docker push $DOCKER_HUB_USERNAME/$DOCKER_HUB_REPO:$CI_COMMIT_REF_NAME
+  only:
+    - main
+    - dev
+
+deploy_prod:
+  stage: deploy
+  script:
+    - apk add --no-cache openssh
+    - mkdir -p $HOME/.ssh
+    - echo "$SSH_PRIVATE_KEY" > $HOME/.ssh/id_rsa
+    - chmod 600 $HOME/.ssh/id_rsa
+    - echo "$SSH_PUBLIC_KEY" > $HOME/.ssh/id_rsa.pub
+    - chmod 644 $HOME/.ssh/id_rsa.pub
+    - ssh-keyscan -p 63976 $VPS_IP >> ~/.ssh/known_hosts
+    - ssh -v $VPS_USER@$VPS_IP -p 63976 "docker pull $DOCKER_HUB_USERNAME/$DOCKER_HUB_REPO:$CI_COMMIT_REF_NAME && docker stop portfolio_prod || true && docker rm portfolio_prod || true && docker run -p 3000:3000 --name portfolio_prod --detach $DOCKER_HUB_USERNAME/$DOCKER_HUB_REPO:$CI_COMMIT_REF_NAME && docker image prune -f"
+  only:
+    - main
+
+deploy_dev:
+  stage: deploy
+  script:
+    - apk add --no-cache openssh
+    - mkdir -p $HOME/.ssh
+    - echo "$SSH_PRIVATE_KEY" > $HOME/.ssh/id_rsa
+    - chmod 600 $HOME/.ssh/id_rsa
+    - echo "$SSH_PUBLIC_KEY" > $HOME/.ssh/id_rsa.pub
+    - chmod 644 $HOME/.ssh/id_rsa.pub
+    - ssh-keyscan -p 63976 $VPS_IP >> ~/.ssh/known_hosts
+    - ssh -v $VPS_USER@$VPS_IP -p 63976 "docker pull $DOCKER_HUB_USERNAME/$DOCKER_HUB_REPO:$CI_COMMIT_REF_NAME && docker stop portfolio_dev || true && docker rm portfolio_dev || true && docker run -p 4000:3000 --name portfolio_dev --detach $DOCKER_HUB_USERNAME/$DOCKER_HUB_REPO:$CI_COMMIT_REF_NAME && docker image prune -f"
+  only:
+    - dev

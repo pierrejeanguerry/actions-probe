@@ -1,0 +1,61 @@
+[
+	{
+		"title": "Pecly",
+		"imagePath": "pecly.png",
+		"imageAlt": "Clone de Doctolib",
+		"descriptions": [
+			"Une application clone de Doctolib, permettant de prendre des rendez-vous avec des medecin, et créer des slots de rendez-vous pour les medecins.",
+			"C'est un projet de groupe réalisé dans le cadre d'un projet de cours.",
+			"Le but était d'apprendre à utiliser React Native avec Expo, en utilisant des spécificités mobiles, comme les senseurs ou les notifications.",
+			"Parmis les contraintes, on devait utiliser Firestore pour stocker nos données."
+		],
+		"link": "https://github.com/pierrejeanguerry/3MOBD-Pecly",
+		"skills": ["React Native", "Expo", "Firestore"]
+	},
+	{
+		"title": "Examen taekwondo",
+		"imagePath": "hermannApp.png",
+		"imageAlt": "Application pour noter des élève au teakwondo",
+		"descriptions": [
+			"Un site permettant de centraliser les notes d'élèves qui passe l'examen dans le but de gagner une ceinture au taekwondo.",
+			"Il s'agit de mon premier projet réalisé en dehors du cadre académique et de manière autonome.",
+			"J'ai donc choisi d'utiliser les technologies que je maîtrise le mieux."
+		],
+		"link": "",
+		"skills": ["ReactJS", "Symfony", "PHP", "MariadDB"]
+	},
+	{
+		"title": "Portfolio",
+		"imagePath": "https://pj-guerry.fr",
+		"imageAlt": "Representation du portfolio",
+		"descriptions": [
+			"Site portfolio, me permettant de me présenter et de montrer mes réalisations actuelles.",
+			"Le but était également de découvrir un nouveau langage et de toucher au monde du déploiement qui n'était encore que très théorique pour moi."
+		],
+		"link": "https://pj-guerry.fr",
+		"skills": ["Svelte", "Typescript"]
+	},
+	{
+		"title": "WeatherApp",
+		"imagePath": "weatherApp.jpg",
+		"imageAlt": "Representation de la weatherApp",
+		"descriptions": [
+			"C'est un projet d'école de groupe dans lequel nous devions mettre en place une application permettant de monitorer des stations météos.",
+			"Il y avait également une partie \"hardware\" dans laquelle on devait fabriquer les stations météos avec des microcontrolleur et capteurs.",
+			"Je me suis occupé en totalité du backend, et j'ai grandement participé au frontend."
+		],
+		"link": "https://github.com/pierrejeanguerry/B2-weatherApp-Rendu",
+		"skills": ["ReactJS", "Symfony", "PHP", "MariadDB", "C++"]
+	},
+	{
+		"title": "Fichtr",
+		"imagePath": "fichtr.png",
+		"imageAlt": "Representation du fichtr",
+		"descriptions": [
+			"C'est un projet d'école de groupe dans lequel nous devions créer un forum.",
+			"L'objectif principal du sujet était d'apprendre à utiliser React.",
+			"Son repository à été supprimé par son créateur."
+		],
+		"skills": ["ReactJS"]
+	}
+]

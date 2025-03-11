@@ -1,0 +1,98 @@
+[
+	{
+		"title": "Langage de programmation",
+		"list": [
+			{
+				"icon": "faC",
+				"description": "C"
+			},
+			{
+				"icon": "faPython",
+				"description": "Python"
+			},
+			{
+				"icon": "faJs",
+				"description": "Javascript"
+			},
+			{
+				"icon": "faPhp",
+				"description": "PHP"
+			}
+		]
+	},
+	{
+		"title": "Frontend",
+		"list": [
+			{
+				"icon": "faHtml5",
+				"description": "HTML"
+			},
+			{
+				"icon": "faCss3",
+				"description": "CSS"
+			},
+			{
+				"icon": "faReact",
+				"description": "React"
+			},
+			{
+				"icon": "svelte.svg",
+				"description": "Svelte",
+				"alt": "Icone de Svelte",
+				"style": "filter: invert(1);",
+				"hoverStyle": "filter: invert(84%) sepia(17%) saturate(1249%) hue-rotate(93deg) brightness(91%) contrast(97%);"
+			}
+		]
+	},
+	{
+		"title": "Backend",
+		"list": [
+			{
+				"icon": "faSymfony",
+				"description": "Symfony"
+			},
+			{
+				"icon": "faNodeJs",
+				"description": "NodeJs"
+			}
+		]
+	},
+	{
+		"title": "Outils",
+		"list": [
+			{
+				"icon": "faDocker",
+				"description": "Docker"
+			},
+			{
+				"icon": "faGit",
+				"description": "Git"
+			}
+		]
+	},
+	{
+		"title": "Certifications",
+		"list": [
+			{
+				"icon": "faFileWord",
+				"description": "Certification Tosa Word"
+			},
+			{
+				"icon": "faFileExcel",
+				"description": "Certification Tosa Excel"
+			}
+		]
+	},
+	{
+		"title": "Langue",
+		"list": [
+			{
+				"icon": "uk-flag.svg",
+				"alt": "drapeau du Royaume-Uni",
+				"description": "Anglais B2",
+				"style": "",
+				"hoverStyle": ""
+			}
+		]
+	}
+]

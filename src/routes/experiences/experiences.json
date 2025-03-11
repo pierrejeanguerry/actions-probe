@@ -1,0 +1,27 @@
+[
+	{
+		"title": "Développeur Web – Stage Bachelor 2",
+		"date": "Freelance | 2024",
+		"description": "Développement d'une application web en ReactJS et Symfony pour gérer l'enregistrement des résultats des examens de ceinture dans un dojo de taekwondo."
+	},
+	{
+		"title": "Développeur Web – Stage Bachelor 1",
+		"date": "AVEC.FR | 2023",
+		"description": "Stage de 2 mois dédié au développement d'applications web en React."
+	},
+	{
+		"title": "Agent Courrier (Intérimaire)",
+		"date": "Septembre - Octobre 2023",
+		"description": "Gestion et distribution du courrier en mission intérimaire."
+	},
+	{
+		"title": "Accompagnant d'Élèves en Situation de Handicap",
+		"date": "Académie de Paris | 2020 - 2022",
+		"description": "Accompagnement et soutien éducatif auprès d'élèves en situation de handicap dans un lycée professionnel."
+	},
+	{
+		"title": "Responsable Animation et Enseignant Remplaçant",
+		"date": "Centre de Loisirs et École Primaire Privée | 2015 - 2016",
+		"description": "Organisation des activités en centre de loisirs et remplacement pédagogique en école primaire."
+	}
+]
