@@ -1,0 +1,12 @@
+name: format and lint workflow
+on:
+  push:
+
+jobs:
+  format:
+    runs-on: ubuntulatest
+    steps:
+      - name: format
+        run: npm run format
+      - name: lint
+        run: npm run lint
