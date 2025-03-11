@@ -6,7 +6,7 @@ on:
     branches: [ main ]
 jobs:
   build:
-    runs-on: ubuntulatest
+    runs-on: ubuntu:latest
     steps:
       - name: Extraire le code du dépôt
         uses: actions/checkout@v4
@@ -19,7 +19,7 @@ jobs:
       - name: Build
         run: npm run build
   lint:
-    runs-on: ubuntulatest
+    runs-on: ubuntu:latest
     steps:
       - name: Extraire le code du dépôt
         uses: actions/checkout@v4
